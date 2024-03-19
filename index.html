@@ -1,0 +1,54 @@
+<!-- Math quiz instruction, inner html, mannual-->
+<!-- Create your boilerplate(shift with ! at the same time).-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link your css with your html -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Rename the title from 'Document' to 'Math quiz'.-->
+    <title>Math Quiz</title>
+</head>
+<body>
+    <!-- Add a h1. After doing  so, name it 'Math Quiz' as well.-->
+   <!-- <h1>Math Quiz</h1>  -->
+   
+   <!-- Let's create a div -->
+   <!-- Instead of classes, we will be using ids. -->
+   <!-- Create a div with an id of 'container'. -->
+   <div id="container">
+    <!-- Create a div with the id of 'score' Remember, this is a math quiz. -->
+    <div id="score">
+        <!-- Create the element 'score:'. Then, use the element span and give it the id of 'score-value'. Put 0 in the content of the span element. -->
+        score: <span id="score-value">0</span>
+        
+    </div>
+    <!-- Let us go outside of the score. Create a paragraph(p) and give it the id of 'correct'. Put 'correct!' inside it. -->
+    <p id="correct">Correct!</p>
+    <!-- Let us create another paragraph. give an id called 'wrong'. In the content, say "try again..." -->
+    <p id="wrong">Try again...</p>
+    <!-- create another paragraph and call it 'question' for its id. This is where the questions are put. We will somehow use js for this... -->
+    <p id="question"></p>
+    <!-- Let's create another paragraph. This is the instruction, that is the id: "instruction". In the content, put "Click on the answer below!"-->
+    <p id="instructions">Click on the answer below!</p>
+    <!-- Create a div and give it an id of choices, these are the options... -->
+    <div id="choices">
+            <!-- These are the set of options... all paragraphs have a class of box and the id is box1 - box4. -->
+            <p class="box" id="box1"></p>
+            <p class="box" id="box2"></p>
+            <p class="box" id="box3"></p>
+            <p class="box" id="box4"></p>
+    </div>
+    <!-- Create the reset paragraph. Give an id of 'start-reset' -->
+    <p id="start-reset">Start game</p>
+    
+    <!-- Create the time-remaining paragraph, add a span and give the id of time-remaining-value. The element content of span will be 60-->
+    <p id="time-remaining">Time-remaining: <span id="time-remaining-value">60</span>sec</p>
+
+    <!-- Create another paragraph with an id of 'game-over' -->
+    <p id="game-over">Game-Over</p>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>

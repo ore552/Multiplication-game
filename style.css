@@ -1,0 +1,197 @@
+/* no instructions for css */
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: cursive;
+    }
+
+    html{
+        background:radial-gradient(circle, #fff, #ccc);
+        height: 100%;
+    }
+
+    /* h1{
+        background-color: blue;
+        box-shadow: 8px 4px 4px 0px chocolate;
+        color: whitesmoke;
+        border: 5px ridge #cd8500;
+        border-radius: 20px;
+        width: 100mm;
+        padding: 11px;
+        margin: 100px auto;
+        text-align: center;
+    } */
+
+    #container{
+        width: 550px;
+        height: 500px;
+        background-color: #9dd2ea;
+        margin: 100px auto;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 4px 0px 0px #009de4;
+        position: relative;
+    }
+
+    #score{
+        width: 100px;
+        background-color: #f1ff92;
+        box-shadow: 0px 4px 0px 0px #9da853;
+        color: #888e5f;
+        /* border: 5px ridge #cd8500; */
+        /* border-radius: 20px; */
+        padding: 10px;
+        position: absolute;
+        left: 400px;
+        font-size: 15px;
+    }
+
+    #correct{
+        background-color:green;
+        box-shadow:8px 4px 4px 0px #ddff00;
+        color: #ffffff;
+        /* border: 5px ridge #cd8500; */
+        border-radius: 20px;
+        /* width: 100px; */
+        padding: 11px;
+        position: absolute;
+        left: 260px;
+        display: none;
+    }
+
+    #wrong{
+        background-color:red;
+        box-shadow:8px 4px 4px 0px #ff9100;
+        color: #ffffff;
+        /* border: 5px ridge #cd8500; */
+        border-radius: 20px;
+        /* width: 100px; */
+        padding: 11px;
+        position: absolute;
+        left: 260px;
+        display: none;
+    }
+
+    #question{
+    width: 450px;  
+    height: 150px;
+    margin: 50px auto 10px auto;
+    box-shadow: 0px 4px #535aa8;
+    background-color:#9da0ea;
+    /* color: whitesmoke; */
+    border: 5px ridge #2c0077c2;
+    border-radius: 20px;
+    font-size: 100px;
+    text-align: center;
+    }
+
+    #instructions{
+        width: 450px;
+        height: 50px ;
+        line-height: 50px;
+        margin: 10px auto;
+        box-shadow: 0px 4px #8153a8;
+        background-color:#8481D9;
+        /* color: white; */
+        border: 5px ridge #330080;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    #choices{
+        width: 450px;
+        height: 150px;
+        margin: 5px auto;
+        /* display: flex;
+        justify-content: space-evenly; */
+    }
+
+    .box{
+        background-color: #ffffff;
+        width: 85px;
+        height: 85px;
+        float: left;
+        margin-right: 36px;
+        border-radius: 2px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 80px;
+        position: relative;
+        box-shadow: 0px 4px #00000041;
+        transition: all 0.2s ease;
+    }
+
+    .box:hover{
+        background-color: #9c89f6;
+        color: white;
+        box-shadow: 0px 4px #6b54de;
+    }
+
+    #start-reset:hover{
+        background-color: #9c89f6;
+        color: white;
+        box-shadow: 0px 4px #6b54de;
+        /* transition: ease all 0.3s; 
+        width: 100px; */
+    }
+
+    #box4{
+        margin-right: 0;
+    }
+
+    .box:active{
+        box-shadow: 0px 0px;
+        top: 4px;
+    }
+
+    #start-reset{
+        background-color:rgba(255, 255, 255, 0.507);
+        width: 120px;
+        padding: 10px;
+        /* float: left; */
+        /* margin-right: 36px; */
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        text-align: center;
+        /* line-height: 80px; */
+        position: relative;
+        box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+        transition: all 0.2s ease;
+        margin: 0 auto;
+        margin-top: -50px;
+        font-size: 15px;
+    }
+
+    #start-reset:active{
+        box-shadow: 0px 0px;
+        top: 4px;
+    }
+
+    #time-remaining{
+        width: 200px;
+        padding: 10px;
+        position: absolute;
+        top: 395px;
+        left: 345px;
+        /* color: rgb(255, 255, 255); */
+        background-color: rgba(181, 235, 36, 0.78);
+        border-radius: 3px;
+        box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    #game-over{
+        height: 200px;
+        width: 500px;
+        text-align: center;
+        color: white;
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        font-size: 2.5em;
+        z-index: 2;
+        background: linear-gradient(#f3ca6b, #fe706c);
+    }
